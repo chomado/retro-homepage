@@ -14,8 +14,7 @@
   <!-- †タイル背景という名の闇† -->
   <style type="text/css">
     body {
-      background-image: url('bg_pattern.gif');
-      background-repeat: repeat;
+      background: #000033 url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gPGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjAuNSIgZmlsbD0iIzMzMDA2NiIvPiA8Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIwLjUiIGZpbGw9IiM2NjAwOTkiLz4gPGNpcmNsZSBjeD0iMTgiIGN5PSI2IiByPSIwLjMiIGZpbGw9IiM5OTAwY2MiLz4gPC9zdmc+') repeat;
       margin: 0;
       padding: 0;
     }
@@ -54,6 +53,38 @@
       -moz-osx-font-smoothing: unset;
       font-smooth: never;
       text-rendering: optimizeSpeed;
+      color: #ffffff;
+      text-shadow: 0 0 3px #ff00ff, 1px 1px 0 #000000;
+    }
+    /* †痛い系リンクスタイル† */
+    a {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff, 1px 1px 0 #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #ffff00;
+      text-shadow: 0 0 8px #ffff00, 1px 1px 0 #000000;
+    }
+    /* †痛い系フォント強化† */
+    .itai-text {
+      color: #ffccff;
+      text-shadow: 0 0 6px #ff00ff, 2px 2px 0 #000000;
+      font-weight: bold;
+    }
+    /* †更なる闇の装飾† */
+    .yami-border {
+      border: 3px double #ff00ff;
+      box-shadow: 0 0 10px #ff00ff, inset 0 0 10px #330066;
+    }
+    /* †キラキラ強化† */
+    .kirakira {
+      animation: kirakira 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes kirakira {
+      0% { text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff; }
+      100% { text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00; }
     }
   </style>
   <script type="text/javascript">
@@ -86,7 +117,7 @@
 </head>
 <body>
 <!-- †メイン外枠テーブル～聖域の境界線～† -->
-<table width="700" align="center" cellpadding="0" cellspacing="0" border="0" style="background:#fff;">
+<table width="700" align="center" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(45deg, #000000 0%, #1a0033 50%, #000000 100%); border: 2px solid #ff00ff; box-shadow: 0 0 20px #ff00ff;">
 <tr><td>
   <!-- †タイトル部～光の紋章～† -->
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -102,37 +133,37 @@
     <table width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- †左サイド：メニュー～導きの間～† -->
-        <td width="160" valign="top" style="border-right:6px solid #00ff00; background:#e0ffe0;">
+        <td width="160" valign="top" style="border-right:6px solid #ff00ff; background:linear-gradient(180deg, #330033 0%, #660066 50%, #330033 100%); box-shadow: inset 0 0 10px #ff00ff;">
           <table width="100%" cellpadding="2" cellspacing="0" border="0">
             <tr><td align="center" style="padding:8px 0;">
-              <img src="under_construction.gif" alt="工事中" width="88" height="31"><br>
-              <span style="font-size:13px; color:#ff0000; font-weight:bold;">†工事中†</span>
+              <img src="under_construction.gif" alt="工事中" width="88" height="31" style="border: 2px solid #ff00ff; box-shadow: 0 0 8px #ff00ff;"><br>
+              <span style="font-size:13px; color:#ff00ff; font-weight:bold; text-shadow: 0 0 5px #ff00ff;">†工事中†</span>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
-              <a href="guest.cgi"><img src="new.gif" alt="NEW!!" width="60" height="20"></a><br>
-              <a href="guest.cgi" style="color:#0000ff; font-size:13px;">†キリ番報告†</a>
+              <a href="guest.cgi"><img src="new.gif" alt="NEW!!" width="60" height="20" style="border: 1px solid #00ffff; box-shadow: 0 0 5px #00ffff;"></a><br>
+              <a href="guest.cgi" style="color:#00ffff; font-size:13px; text-shadow: 0 0 5px #00ffff;">†キリ番報告†</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
-              <a href="guest.cgi" style="color:#ff00ff;">★魂の記録帳★</a><br>
-              <a href="links.html" style="color:#00ccff;">†相互リンクの聖域†</a><br>
-              <a href="ashiato.html" style="color:#ff9900;">★足跡の軌跡★</a>
+              <a href="guest.cgi" style="color:#ff00ff; text-shadow: 0 0 5px #ff00ff;">†★魂の記録帳★†</a><br>
+              <a href="links.html" style="color:#00ffff; text-shadow: 0 0 5px #00ffff;">†相互リンクの聖域†</a><br>
+              <a href="ashiato.html" style="color:#ffff00; text-shadow: 0 0 5px #ffff00;">†★足跡の軌跡★†</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
-              <a href="https://www.geocities.jp/net_manner/" target="_blank" style="color:#ff0000; text-decoration:underline;">†毒吐きネットマナー†</a>
+              <a href="https://www.geocities.jp/net_manner/" target="_blank" style="color:#ff0066; text-decoration:underline; text-shadow: 0 0 5px #ff0066;">†毒吐きネットマナー†</a>
             </td></tr>
           </table>
         </td>
         <!-- †右メイン～魂の表現の場～† -->
-        <td valign="top" style="background:#fff;">
+        <td valign="top" style="background:linear-gradient(135deg, #000000 0%, #000033 50%, #330066 100%);">‌
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr><td align="center" style="padding:8px 0;">
               <!-- †marquee点滅～歓迎の儀式～† -->
-              <marquee scrollamount="8" direction="left"><span class="blink" style="font-size:22px; color:#ff00ff; font-weight:bold; text-shadow:2px 2px 0 #0000ff, 0 0 6px #fff;">ようこそ†闇の王国†へ★汝の魂を歓迎するのです★</span></marquee>
+              <marquee scrollamount="8" direction="left"><span class="blink" style="font-size:22px; color:#ff00ff; font-weight:bold; text-shadow:2px 2px 0 #0000ff, 0 0 6px #ff00ff, 0 0 12px #ff00ff;">†ようこそ†闇の王国†へ★汝の魂を歓迎するのです★</span></marquee>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †カウンター～選ばれし者の記録～† -->
-              <span style="font-size:16px; color:#0000ff; font-weight:bold;">汝は <span id="counter">200124</span> 人目の夢追い人です。</span><br>
-              <span style="font-size:12px; color:#ff0000; font-weight:bold;">†キリ番の踏み逃げ禁止！必ず報告するのです†</span>
+              <span style="font-size:16px; color:#ffccff; font-weight:bold; text-shadow: 0 0 5px #ff00ff;">汝は <span id="counter">200124</span> 人目の夢追い人です。</span><br>
+              <span style="font-size:12px; color:#ff0066; font-weight:bold; text-shadow: 0 0 3px #ff0066;">†キリ番の踏み逃げ禁止！必ず報告するのです†</span>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †隠しページへの1px透明GIFリンク～秘密の扉～† -->
@@ -148,11 +179,11 @@
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †お題バトンページ～魂の交流～† -->
-              <a href="baton.html" style="font-size:15px; color:#00ff00; font-weight:bold; text-shadow:1px 1px 0 #000;">★○○お題バトン★</a>
+              <a href="baton.html" style="font-size:15px; color:#00ff00; font-weight:bold; text-shadow: 0 0 6px #00ff00, 1px 1px 0 #000;">†★○○お題バトン★†</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †萌え絵～主の魂の結晶～† -->
-              <img src="moe.png" width="320" alt="†主の描きし萌え絵†" style="border:2px solid #ff00ff; box-shadow:0 0 8px #ffccff;">
+              <img src="moe.png" width="320" alt="†主の描きし萌え絵†" style="border:2px solid #ff00ff; box-shadow:0 0 15px #ff00ff, 0 0 30px #ff00ff;">
             </td></tr>
           </table>
         </td>
@@ -161,10 +192,10 @@
   </td></tr>
   <!-- †フッター～聖域の封印～† -->
   <tr><td><hr class="rainbow" noshade size="6"></td></tr>
-  <tr><td align="center" style="font-size:12px; color:#888; padding:8px;">
+  <tr><td align="center" style="font-size:12px; color:#cccccc; padding:8px; text-shadow: 0 0 3px #666666;">
     (C) 2000-2025 †古の個人サイト†<br />
     この聖域は原則リンクフリーだったりします。リンクのご連絡も不要なのです。<br />
-    ★闇の主より愛を込めて★
+    †★闇の主より愛を込めて★†
   </td></tr>
 </td></tr>
 </table>
