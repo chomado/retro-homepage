@@ -14,10 +14,12 @@
   <!-- †タイル背景という名の闇† -->
   <style type="text/css">
     body {
+      background-color: #000000;
       background-image: url('bg_pattern.gif');
       background-repeat: repeat;
       margin: 0;
       padding: 0;
+      color: #ffffff;
     }
     /* 虹色罫線風 */
     .rainbow {
@@ -54,6 +56,30 @@
       -moz-osx-font-smoothing: unset;
       font-smooth: never;
       text-rendering: optimizeSpeed;
+      color: #ffffff;
+      text-shadow: 0 0 3px #00ffff;
+    }
+    /* 蛍光色リンク */
+    a {
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+    }
+    a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 8px #ff00ff;
+    }
+    /* 強調文字の蛍光効果 */
+    .glow-pink {
+      color: #ffccff;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+    .glow-yellow {
+      color: #ffff00;
+      text-shadow: 0 0 5px #ffff00;
+    }
+    .glow-green {
+      color: #00ff00;
+      text-shadow: 0 0 5px #00ff00;
     }
   </style>
   <script type="text/javascript">
@@ -86,7 +112,7 @@
 </head>
 <body>
 <!-- †メイン外枠テーブル～聖域の境界線～† -->
-<table width="700" align="center" cellpadding="0" cellspacing="0" border="0" style="background:#fff;">
+<table width="700" align="center" cellpadding="0" cellspacing="0" border="0" style="background:#000000; box-shadow: 0 0 20px #00ffff;">
 <tr><td>
   <!-- †タイトル部～光の紋章～† -->
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -102,28 +128,28 @@
     <table width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- †左サイド：メニュー～導きの間～† -->
-        <td width="160" valign="top" style="border-right:6px solid #00ff00; background:#e0ffe0;">
+        <td width="160" valign="top" style="border-right:6px solid #00ff00; background:#330033; box-shadow: inset 0 0 10px #ff00ff;">
           <table width="100%" cellpadding="2" cellspacing="0" border="0">
             <tr><td align="center" style="padding:8px 0;">
               <img src="under_construction.gif" alt="工事中" width="88" height="31"><br>
-              <span style="font-size:13px; color:#ff0000; font-weight:bold;">†工事中†</span>
+              <span style="font-size:13px; color:#ff00ff; font-weight:bold; text-shadow: 0 0 5px #ff00ff;">†工事中†</span>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <a href="guest.cgi"><img src="new.gif" alt="NEW!!" width="60" height="20"></a><br>
-              <a href="guest.cgi" style="color:#0000ff; font-size:13px;">†キリ番報告†</a>
+              <a href="guest.cgi" style="color:#00ffff; font-size:13px; text-shadow: 0 0 5px #00ffff;">†キリ番報告†</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
-              <a href="guest.cgi" style="color:#ff00ff;">★魂の記録帳★</a><br>
-              <a href="links.html" style="color:#00ccff;">†相互リンクの聖域†</a><br>
-              <a href="ashiato.html" style="color:#ff9900;">★足跡の軌跡★</a>
+              <a href="guest.cgi" style="color:#ff00ff; text-shadow: 0 0 5px #ff00ff;">★魂の記録帳★</a><br>
+              <a href="links.html" style="color:#00ffff; text-shadow: 0 0 5px #00ffff;">†相互リンクの聖域†</a><br>
+              <a href="ashiato.html" style="color:#ffff00; text-shadow: 0 0 5px #ffff00;">★足跡の軌跡★</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
-              <a href="https://www.geocities.jp/net_manner/" target="_blank" style="color:#ff0000; text-decoration:underline;">†毒吐きネットマナー†</a>
+              <a href="https://www.geocities.jp/net_manner/" target="_blank" style="color:#ff0000; text-decoration:underline; text-shadow: 0 0 5px #ff0000;">†毒吐きネットマナー†</a>
             </td></tr>
           </table>
         </td>
         <!-- †右メイン～魂の表現の場～† -->
-        <td valign="top" style="background:#fff;">
+        <td valign="top" style="background:#111111;">
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr><td align="center" style="padding:8px 0;">
               <!-- †marquee点滅～歓迎の儀式～† -->
@@ -131,8 +157,8 @@
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †カウンター～選ばれし者の記録～† -->
-              <span style="font-size:16px; color:#0000ff; font-weight:bold;">汝は <span id="counter">200124</span> 人目の夢追い人です。</span><br>
-              <span style="font-size:12px; color:#ff0000; font-weight:bold;">†キリ番の踏み逃げ禁止！必ず報告するのです†</span>
+              <span style="font-size:16px; color:#ffffff; font-weight:bold; text-shadow: 0 0 5px #00ffff;">汝は <span id="counter">200124</span> 人目の夢追い人です。</span><br>
+              <span style="font-size:12px; color:#ffff00; font-weight:bold; text-shadow: 0 0 5px #ffff00;">†キリ番の踏み逃げ禁止！必ず報告するのです†</span>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †隠しページへの1px透明GIFリンク～秘密の扉～† -->
@@ -148,11 +174,11 @@
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †お題バトンページ～魂の交流～† -->
-              <a href="baton.html" style="font-size:15px; color:#00ff00; font-weight:bold; text-shadow:1px 1px 0 #000;">★○○お題バトン★</a>
+              <a href="baton.html" style="font-size:15px; color:#00ff00; font-weight:bold; text-shadow: 0 0 8px #00ff00;">★○○お題バトン★</a>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †萌え絵～主の魂の結晶～† -->
-              <img src="moe.png" width="320" alt="†主の描きし萌え絵†" style="border:2px solid #ff00ff; box-shadow:0 0 8px #ffccff;">
+              <img src="moe.png" width="320" alt="†主の描きし萌え絵†" style="border:2px solid #ff00ff; box-shadow:0 0 15px #ff00ff;">
             </td></tr>
           </table>
         </td>
@@ -161,7 +187,7 @@
   </td></tr>
   <!-- †フッター～聖域の封印～† -->
   <tr><td><hr class="rainbow" noshade size="6"></td></tr>
-  <tr><td align="center" style="font-size:12px; color:#888; padding:8px;">
+  <tr><td align="center" style="font-size:12px; color:#888; padding:8px; text-shadow: 0 0 3px #ffffff;">
     (C) 2000-2025 †古の個人サイト†<br />
     この聖域は原則リンクフリーだったりします。リンクのご連絡も不要なのです。<br />
     ★闇の主より愛を込めて★
