@@ -49,6 +49,18 @@
       opacity: 1;
       transition: opacity 0.7s linear;
       z-index: 9999;
+      filter: drop-shadow(0 0 3px #00ffff);
+    }
+    /* 闇背景パターン */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(255,0,255,0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(0,255,255,0.1) 0%, transparent 50%),
+                  radial-gradient(circle at 40% 80%, rgba(255,255,0,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
     }
     /* アンチエイリアス無効化（font-smoothing off） */
     body, table, td, th, span, a, h1, h2, h3, h4, h5, h6 {
@@ -118,7 +130,7 @@
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr><td align="center" style="padding:12px 0 4px 0;">
       <!-- †ポップ体風タイトル画像（SVG埋め込み）～魂の名前～† -->
-      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='80'><defs><filter id='f1' x='0' y='0'><feOffset result='offOut' in='SourceAlpha' dx='3' dy='3'/><feGaussianBlur result='blurOut' in='offOut' stdDeviation='2'/><feBlend in='SourceGraphic' in2='blurOut' mode='normal'/></filter></defs><rect width='420' height='80' fill='none'/><text x='50%' y='60%' text-anchor='middle' font-family='Soei Kaku Pop,MS PGothic,Arial Black,sans-serif' font-size='44' font-weight='bold' fill='%23ff0000' stroke='%23000000' stroke-width='3' filter='url(%23f1)'>古の個人サイト</text><text x='50%' y='60%' text-anchor='middle' font-family='Soei Kaku Pop,MS PGothic,Arial Black,sans-serif' font-size='44' font-weight='bold' fill='%23ffff00' stroke='%23000000' stroke-width='0' dy='3'>古の個人サイト</text></svg>" alt="古の個人サイト" width="420" height="80">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='420' height='80'><defs><filter id='f1' x='0' y='0'><feOffset result='offOut' in='SourceAlpha' dx='3' dy='3'/><feGaussianBlur result='blurOut' in='offOut' stdDeviation='2'/><feBlend in='SourceGraphic' in2='blurOut' mode='normal'/></filter></defs><rect width='420' height='80' fill='none'/><text x='50%' y='60%' text-anchor='middle' font-family='Soei Kaku Pop,MS PGothic,Arial Black,sans-serif' font-size='44' font-weight='bold' fill='%23ff0000' stroke='%23000000' stroke-width='3' filter='url(%23f1)'>古の個人サイト</text><text x='50%' y='60%' text-anchor='middle' font-family='Soei Kaku Pop,MS PGothic,Arial Black,sans-serif' font-size='44' font-weight='bold' fill='%23ffff00' stroke='%23000000' stroke-width='0' dy='3'>古の個人サイト</text></svg>" alt="古の個人サイト" width="420" height="80" style="filter: drop-shadow(0 0 10px #ffff00) drop-shadow(0 0 20px #ff00ff);">
     </td></tr>
   </table>
   <!-- †虹色罫線～七色の結界～† -->
@@ -153,7 +165,7 @@
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr><td align="center" style="padding:8px 0;">
               <!-- †marquee点滅～歓迎の儀式～† -->
-              <marquee scrollamount="8" direction="left"><span class="blink" style="font-size:22px; color:#ff00ff; font-weight:bold; text-shadow:2px 2px 0 #0000ff, 0 0 6px #fff;">ようこそ†闇の王国†へ★汝の魂を歓迎するのです★</span></marquee>
+              <marquee scrollamount="8" direction="left"><span class="blink" style="font-size:22px; color:#ff00ff; font-weight:bold; text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 2px 2px 0 #ffff00;">ようこそ†闇の王国†へ★汝の魂を歓迎するのです★</span></marquee>
             </td></tr>
             <tr><td align="center" style="padding:8px 0;">
               <!-- †カウンター～選ばれし者の記録～† -->
